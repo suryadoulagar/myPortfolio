@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Suryadoulagar</title>
+    <link rel="icon" href="images/image.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+
+    <a name="top"></a>
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+                <a href="#blog" class="mr-5 hover:text-gray-900">Blog</a>
+                <a href="#about" class="mr-5 hover:text-gray-900">About</a>
+                <a href="#skills" class="mr-5 hover:text-gray-900">Skills</a>
+                <a href="#works" class="mr-5 hover:text-gray-900">Projects</a>
+                <a href="#contact" class="mr-5 hover:text-gray-900">Contact</a>
+            </nav>
+            <a
+                class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path class="heroicon-ui"
+                        d="M20.59 12l-3.3-3.3a1 1 0 111.42-1.4l4 4a1 1 0 010 1.4l-4 4a1 1 0 01-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 01-1.42 1.4l-4-4a1 1 0 010-1.4l4-4A1 1 0 016.7 8.7L3.4 12zm7.56 8.24a1 1 0 01-1.94-.48l4-16a1 1 0 111.94.48l-4 16z" />
+                </svg>
+                <span class="ml-3 text-xl">SURYA DOULAGAR</span>
+            </a>
+            <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+
+                <!-- modal testing -->
+
+
+                <button
+                    class="modal-open inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">RESUME
+
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24" data-darkreader-inline-fill=""
+                        data-darkreader-inline-stroke=""
+                        style="--darkreader-inline-fill:none; --darkreader-inline-stroke:currentColor;">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+
+                <!-- modal content -->
+                <!--Modal-->
+                <div
+                    class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+                    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+
+                    <div
+                        class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+
+                        <div
+                            class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                            <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18"
+                                height="18" viewBox="0 0 18 18">
+                                <path
+                                    d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                                </path>
+                            </svg>
+                            <span class="text-sm">(Esc)</span>
+                        </div>
+
+                        <!-- Add margin if you want to see some of the overlay behind the modal-->
+                        <div class="modal-content py-4 text-left px-6">
+                            <!--Title-->
+                            <div class="flex justify-between items-center pb-3">
+                                <p class="text-2xl font-bold">Resume</p>
+                                <div class="modal-close cursor-pointer z-50">
+                                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18"
+                                        height="18" viewBox="0 0 18 18">
+                                        <path
+                                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!--Body-->
+                            <img src="images/Profile.jpg" alt="" srcset="">
+
+                            <!--Footer-->
+                            <div class="flex justify-end pt-2">
+                                <button
+                                    class="modal-close px-4 bg-transparent p-3 rounded-lg text-green-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero -->
+
+    <a name="about"></a>
+    <section class="text-gray-700 body-font">
+        <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="images/hero.jpg">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font text-center sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hey there, I'm
+                    <br>SURYA DOULAGAR
+                </h1>
+
+                <!-- <h1 class="text-xl text-green-500 tracking-widest font-large title-font mb-1">here is the sneak peak to
+                    my work so
+                    far, want to see more? <a href="mail">Email me.</a></h1> -->
+
+                <h1 class="sm:text-3xl text-2xl font-small title-font text-gray-900 mb-4">CEO & Founder, <a
+                        href="https://www.instagram.com/kick_codes/">@kickcodes</a> and an active fellow member of <a
+                        href="https://www.devinitelyhealthy.xyz/">#devinitelyhealty</a></h1>
+                <p class="mb-8 leading-relaxed">and a Computer Science undergraduate from Hyderabad university,
+                    extremely
+                    passionate about web designing and development.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><a
+                            href="#work"> See
+                            my work</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+
+    <a name="skills"></a>
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-20 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                    <h2
+                        class="font-medium title-font tracking-widest text-gray-900 mb-4 text-xl text-center sm:text-left">
+                        Technologies that I use:</h2>
+                    <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1">
+                        <a class="mb-2">
+                            <span
+                                class="bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>HTML
+                        </a>
+                        <a class="mb-2">
+                            <span
+                                class="bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>CSS
+                        </a>
+                        <a class="mb-2">
+                            <span
+                                class="bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Bootstrap
+                        </a>
+                        <a class="mb-2">
+                            <span
+                                class="bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Tailwind css
+                        </a>
+                        <a class="mb-2">
+                            <span
+                                class="bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>vanilla Javascript
+                        </a>
+                        <a class="mb-2">
+                            <span
+                                class="bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Node.js
+                        </a>
+                        <a class="mb-2">
+                            <span
+                                class="bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Flask
+                        </a>
+                        <a class="mb-2">
+                            <span
+                                class="bg-green-100 text-green-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>git essentials
+                        </a>
+                    </nav>
+                </div>
+    </section>
+
+    <!-- works-->
+
+    <section class="text-gray-700 body-font">
+        <a name="works"></a>
+        <a name="work"></a>
+        <div class="container px-5 py-14 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">My Recent Works</h1>
+                <h2 class="text-s text-green-500 tracking-widest font-medium title-font mb-1">here is the sneak peak to
+                    my work so
+                    far, want to see more? <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=suryadoulagar@gmail.com">Email me.</a>
+                </h2>
+
+            </div>
+            <div class="flex flex-wrap">
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">MRITS app</h2>
+                    <p class="leading-relaxed text-base mb-4">This is one of the magnum opuses, as I contributed on UI
+                        part along
+                        with a team on a major project, A web application for the University which mainly focusses on
+                        both, the students
+                        and the admin which now has a traffic of more than 2000 userbase.</p>
+                    <a href="https://mrits.in/" class="text-green-500 inline-flex items-center">visit site
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Billionaire Rookie</h2>
+                    <p class="leading-relaxed text-base mb-4">A blog which depicts the traits of what it takes to be an
+                        Entrepreneur, this is something Iam super proud of, and want to suggest you to definitely give
+                        it a view.</p>
+                    <a href="https://suryadoulagar.home.blog/" class="text-green-500 inline-flex items-center">visit
+                        site
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Coronoa_Go</h2>
+                    <p class="leading-relaxed text-base mb-4">COVID tracker using JSON API and PHP for backend</p>
+                    <a href="https://coronacops.herokuapp.com/" class="text-green-500 inline-flex items-center">visit
+                        site
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/suryadoulagar/Corona_Go"
+                        class="text-green-500 inline-flex items-center">github
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Scheduler-JS</h2>
+                    <p class="leading-relaxed text-base mb-4">Basically a TO-DO application manager, the fun part is,
+                        this is made without any heavy database configurations.</p>
+                    <a href="https://schedulerjs.herokuapp.com/" class="text-green-500 inline-flex items-center">visit
+                        site
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/suryadoulagar/scheduler-js"
+                        class="text-green-500 inline-flex items-center">github
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">SD constructions</h2>
+                    <p class="leading-relaxed text-base mb-4">A portfolio website for a client in the construction
+                        industry</p>
+                    <a href="https://suryadoulagar.github.io/portfolio_html/"
+                        class="text-green-500 inline-flex items-center">visit site
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/suryadoulagar/portfolio_html"
+                        class="text-green-500 inline-flex items-center">github
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200">
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Linktree.clone</h2>
+                    <p class="leading-relaxed text-base mb-4">A static webpage of a Bootstrap card depicting the user's
+                        profile links</p>
+                    <a href="https://suryadoulagar.github.io/linktree.clone/"
+                        class="text-green-500 inline-flex items-center">visit site
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/suryadoulagar/linktree.clone"
+                        class="text-green-500 inline-flex items-center">github
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- BLog -->
+
+    <a name="blog"></a>
+    <section class="text-gray-700 body-font overflow-hidden">
+        <div class="container px-5 py-12 mx-auto">
+            <div class="-my-8">
+                <div class="py-8 flex flex-wrap md:flex-no-wrap">
+                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                        <span class="tracking-widest font-medium title-font text-gray-900">Billionaire Rookie</span>
+                        <span class="mt-1 text-gray-500 text-sm">20 July 2020</span>
+                    </div>
+                    <div class="md:flex-grow">
+                        <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">What it takes to be an
+                            Entrepreneur?</h2>
+                        <p class="leading-relaxed">1. YOU’RE AN <strong>ALPHA</strong>. <br>
+                            You are always confident about the value you deliver. You don’t get liked by everyone
+                            because there will be atleast one person pissed off by the work you do,but that doesn’t
+                            bothers you and you still keep on moving. You don’t get liked by everyone but you make sure
+                            you’re respected by everyone...</p>
+                        <a href="https://suryadoulagar.home.blog/" target="_blank"
+                            class="text-green-500 inline-flex items-center mt-4">Continue reading
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <a name="contact"></a>
+    <section class="text-gray-700 body-font relative">
+        <div class="absolute inset-0 bg-gray-300">
+            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map"
+                scrolling="no"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=kukatpally%20hyderabad%20telangana%20india+(surya%20doulagar)&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+            <div
+                class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Get In Touch</h2>
+
+                <input
+                    class="bg-white rounded border border-gray-400 focus:outline-none focus:border-green-500 text-base px-4 py-2 mb-4"
+                    placeholder="Email" type="email">
+                <textarea
+                    class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-green-500 text-base px-4 py-2 mb-4 resize-none"
+                    placeholder="Message"></textarea>
+                <button
+                    class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=suryadoulagar@gmail.com">send
+                        feedback</button>
+                <p class="text-xs text-gray-500 mt-3">your constructive feedbacks are precious building blocks for our
+                    <span style="text-align: center;">SUCCESS</span>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="text-gray-700 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2020 —
+                <a href="#top" class="text-gray-600 ml-1" rel="noopener noreferrer">Surya doulagar</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://www.facebook.com/suryadoulagar" class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/mr_doulagar" class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/kick_codes/" class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/surya-doulagar-1037a816a/" class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
